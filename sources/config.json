@@ -1,0 +1,50 @@
+{
+    // init: root_dir, current_dir, config_file
+
+    /*
+    import os
+    import matplotlib.pyplot as plt
+    from tensorflow.keras import backend as K, callbacks, layers
+    ['os', 
+     ['matplotlib.pyplot', 'plt'], import os
+     ['tensorflow.keras', [['backend', 'K'], 'callbacks', 'layers']],
+    ]
+    */
+    "start_import": [
+            'os', 'sys', 'shutil', 'json5', 
+            ['datetime', ['datetime']],
+        ],
+    "end_import": [],
+    "init_eval_f": ['current_dir', 'root_dir', 'config_file',
+                    'source_dir', 'libraries_dir', 'resources_cfg',
+                    'data_dir', 'dataset_dir', 'exp_dir',
+                    ],
+    "init_eval"    : ['relative_module_dir', 'include_dirs', 'module_dir'],
+    "init_json"    : ['resources_cfg'],
+    "init_globals" : true,
+    "init_verbose" : 0,
+
+    "current_dir"   : "{current_dir}", // pre-defined in config
+    "root_dir"      : "{root_dir}",    // pre-defined in config
+    "config_file"   : "{config_file}", // pre-defined in config
+    
+    "source_dir"    : "{root_dir}/sources",
+    "libraries_dir" : "{root_dir}/libraries",
+    "include_dirs"  : "[ \
+            source_dir, \
+            libraries_dir + '/qubvel/segmentation_models/git', \
+            libraries_dir + '/qubvel/efficientnet/git', \
+            libraries_dir + '/qubvel/classification_models/git', \
+    ]",
+
+    "data_dir"   : "{root_dir}/data",
+    "dataset_dir": "{data_dir}/datasets",
+    "exp_dir"    : "{data_dir}/experiments",
+
+    "module_dir" : 'module_dir if globals().get("module_dir") is not None else current_dir',
+    "relative_module_dir": 'os.path.relpath(module_dir, start=source_dir)',
+    
+    "debug_vars" : {},
+
+    "resources_cfg": "{source_dir}/resources.json",
+}

@@ -1,0 +1,41 @@
+{
+    // init: root_dir, current_dir, config_file
+
+    /*
+    import os
+    import matplotlib.pyplot as plt
+    from tensorflow.keras import backend as K, callbacks, layers
+    ['os', 
+     ['matplotlib.pyplot', 'plt'], import os
+     ['tensorflow.keras', [['backend', 'K'], 'callbacks', 'layers']],
+    ]
+    */
+    "init_import": [
+        'os', 'sys', 'shutil', 
+        ['datetime', ['datetime']],
+                ],
+    "init_eval_f": ['source_dir', 'libraries_dir',  
+                    'data_dir', 'dataset_dir', 'exp_dir', 'module_dir'
+                ],
+    "init_eval"  : ['relative_module_dir', 'include_dirs'],
+    "init_var"   : ['debug_vars'],
+    "verbose"    : 1,
+
+    "source_dir"    : "{root_dir}/sources",
+    "libraries_dir" : "{root_dir}/libraries",
+    "include_dirs"  : "[ \
+            source_dir, \
+            libraries_dir + '/qubvel/segmentation_models/git', \
+            libraries_dir + '/qubvel/efficientnet/git', \
+            libraries_dir + '/qubvel/classification_models/git', \
+    ]",
+
+    "data_dir"   : "{root_dir}/data",
+    "dataset_dir": "{data_dir}/datasets",
+    "exp_dir"    : "{data_dir}/experiments",
+
+    "module_dir" : "{current_dir}",
+    "relative_module_dir": 'os.path.relpath(module_dir, start=source_dir)',
+
+    "debug_vars" : {},
+}

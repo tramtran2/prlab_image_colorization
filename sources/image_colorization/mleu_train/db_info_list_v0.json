@@ -1,0 +1,81 @@
+{
+    "init_parse": ["test1", "test2", "test4", "div2k_lr_x8", "cocostuff", "div2k_hr"],
+
+    "test1": {
+        "init_parse" : ["info"],
+        "info": {
+            "init_eval_f" : ["db_root", "db_file", "db_root_class"],
+            "db_root" : "{dataset_dir}/image_colorization/test1/images",
+            "db_root_class" : "{dataset_dir}/image_colorization/places365/test1",
+            "db_file" : "{data_dir}/preprocessing/image_colorization/test1.hdf5",
+            "db_name" : "images",
+        },
+        // template
+        "scheme": null,
+    },
+
+    "test2": {
+        "init_parse" : ["info"],
+        "info": {
+            "init_eval_f" : ["db_root", "db_file", "db_root_class"],
+            "db_root" : "{dataset_dir}/image_colorization/test2/images",
+            "db_root_class" : "{dataset_dir}/image_colorization/places365/test2",
+            "db_file" : "{data_dir}/preprocessing/image_colorization/test2.hdf5",
+            "db_name" : "images",
+        },
+        // template
+        "scheme": null,
+    },
+
+    "test4": {
+        "init_parse" : ["info"],
+        "info": {
+            "init_eval_f" : ["db_root", "db_file", "db_root_class"],
+            "db_root" : "{dataset_dir}/image_colorization/test4/images",
+            "db_root_class" : "{dataset_dir}/image_colorization/places365/test4",
+            "db_file" : "{data_dir}/preprocessing/image_colorization/test4.hdf5",
+            "db_name" : "images",
+        },
+        // template
+        "scheme": null,
+    },        
+            
+    "div2k_lr_x8": {
+        "init_parse" : ["info"],
+        "info": {
+            "init_eval_f" : ["db_root", "db_file", "db_root_class"],
+            "db_root" : "{dataset_dir}/div2k",
+            "db_root_class" : "{dataset_dir}/div2k/places365",
+            "db_file": "{data_dir}/preprocessing/div2k/div2k_lr_x8.hdf5",
+            "db_name" : "images",
+        },
+        // template
+        "scheme": "{data_dir}/preprocessing/div2k/kfold_div2k_lr_x8/{params[\"training_scheme\"]}.npz",
+    },
+    
+    "div2k_hr": {
+        "init_parse" : ["info"],
+        "info": {
+            "init_eval_f" : ["db_root", "db_file", "db_root_class"],
+            "db_root" : "{dataset_dir}/div2k",
+            "db_root_class" : "{dataset_dir}/div2k/places365",
+            "db_file": "{data_dir}/preprocessing/div2k/div2k_hr.hdf5",
+            "db_name" : "images",
+        },
+        // template
+        "scheme": "{data_dir}/preprocessing/div2k/kfold_div2k_hr/{params[\"training_scheme\"]}.npz",
+    },    
+
+    "cocostuff": {
+        "init_parse" : ["info"],
+        "info": {
+            "init_eval_f" : ["db_root", "db_file","db_root_class"],
+            "db_root" : "{dataset_dir}/cocostuff/images",
+            "db_root_class" : "{dataset_dir}/cocostuff/places365",
+            "db_file": "{data_dir}/preprocessing/cocostuff/cocostuff.hdf5",
+            "db_name" : "images",
+        },
+        // template
+        "scheme": "{data_dir}/preprocessing/cocostuff/kfold/{params[\"training_scheme\"]}.npz",
+    }
+}

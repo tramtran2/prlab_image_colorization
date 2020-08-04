@@ -1,0 +1,24 @@
+{
+    "update_model": {
+        "default": {
+            "init_eval": ["input_shape"],
+            "input_shape":  "[params['image_size'], params['image_size'], 1]", 
+        },
+        "empty": { 
+            "init_eval": ["input_shape"],
+            "input_shape":  "[None, None, 1]",
+        },
+    },
+    "base_model": {
+        "zhang_vgg16_v0": {
+            "type": "zhang_vgg16",
+            "name": "zhang_vgg16_v0",
+            "cfg": {
+                "input_shape": [256, 256, 1], // output default 64
+                "kernel"     : 3,
+                "n_softencoding_class": 313,
+                "model_name"          : "m",
+            }
+        },
+    }
+}

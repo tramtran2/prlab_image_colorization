@@ -1,0 +1,10 @@
+{
+    "default": {
+        "init_eval": ["input_shape"],
+        
+        "input_shape":  "[params['image_size'], params['image_size'], 1]", // Gray Image with Free Size
+    },
+    "empty": {
+        
+    },
+}
