@@ -11,6 +11,7 @@ Papers: <br/>
 ## Problems
 1. Accuracy is not convergence
 2. Red noise in colorized image
+3. Report: <a href="https://raw.githubusercontent.com/tramtran2/prlab_image_colorization/master/problem01/tnqtram_problems_image_colorization.pdf">Links</a>
 
 ## Training History
 1. Using RMSProp, Adam with Step Decay, or Constant or Cycle Learning Rate
@@ -45,7 +46,7 @@ Papers: <br/>
 <image src="https://raw.githubusercontent.com/tramtran2/prlab_image_colorization/master/problem01/images/models.png" height=300/>
 
 ## Source Codes:
-** Loss Function:**: https://github.com/tramtran2/prlab_image_colorization/blob/master/sources/image_colorization/mleu_train/losses.py<br/>
-** Soft-Encoding Function:**: https://github.com/tramtran2/prlab_image_colorization/blob/master/sources/image_colorization/datasets/quantized_colors/colorized_soft_encoding.py<br/>
-** Decoding Function **: https://github.com/tramtran2/prlab_image_colorization/blob/master/sources/image_colorization/datasets/quantized_colors/decode_v1.py<br/>
-** Models **: https://github.com/tramtran2/prlab_image_colorization/blob/master/sources/image_colorization/mleu_train/models/zhang_models.py<br/>
+** Loss Function:** https://github.com/tramtran2/prlab_image_colorization/blob/master/sources/image_colorization/mleu_train/losses.py<br/>
+** Soft-Encoding Function:** https://github.com/tramtran2/prlab_image_colorization/blob/master/sources/image_colorization/datasets/quantized_colors/colorized_soft_encoding.py<br/>
+** Decoding Function:** https://github.com/tramtran2/prlab_image_colorization/blob/master/sources/image_colorization/datasets/quantized_colors/decode_v1.py<br/>
+** Models: ** https://github.com/tramtran2/prlab_image_colorization/blob/master/sources/image_colorization/mleu_train/models/zhang_models.py<br/>
