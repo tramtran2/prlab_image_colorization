@@ -33,11 +33,19 @@ Papers: <br/>
 <image src="https://raw.githubusercontent.com/tramtran2/prlab_image_colorization/master/problem01/images/logs_acc.jpg" height=300/>
 <font color="Red">Accuracy is not convergence at Column 1</font>
 
+** Predictions **<br/>
+<image src="https://raw.githubusercontent.com/tramtran2/prlab_image_colorization/master/problem01/images/predictions.png" height=300/>
+<font color="Red">Results (with Red Noise and some regions are not colorized)</font>
+
+** Results **<br/>
+<image src="https://raw.githubusercontent.com/tramtran2/prlab_image_colorization/master/problem01/images/results.png" height=300/>
+<font color="Red">Results (with Red Noise and some regions are not colorized)</font>
+
 ## Model
 <image src="https://raw.githubusercontent.com/tramtran2/prlab_image_colorization/master/problem01/images/models.png" height=300/>
 
 ## Source Codes:
-** Loss Function:**: https://github.com/tramtran2/prlab_image_colorization/blob/master/sources/image_colorization/mleu_train/losses.py
-** Soft-Encoding Function:**: https://github.com/tramtran2/prlab_image_colorization/blob/master/sources/image_colorization/datasets/quantized_colors/colorized_soft_encoding.py
-** Decoding Function **: https://github.com/tramtran2/prlab_image_colorization/blob/master/sources/image_colorization/datasets/quantized_colors/decode_v1.py
-** Models **: 
+** Loss Function:**: https://github.com/tramtran2/prlab_image_colorization/blob/master/sources/image_colorization/mleu_train/losses.py<br/>
+** Soft-Encoding Function:**: https://github.com/tramtran2/prlab_image_colorization/blob/master/sources/image_colorization/datasets/quantized_colors/colorized_soft_encoding.py<br/>
+** Decoding Function **: https://github.com/tramtran2/prlab_image_colorization/blob/master/sources/image_colorization/datasets/quantized_colors/decode_v1.py<br/>
+** Models **: https://github.com/tramtran2/prlab_image_colorization/blob/master/sources/image_colorization/mleu_train/models/zhang_models.py<br/>
